@@ -1,0 +1,20 @@
+
+dalbana
+    peers
+
+game
+    world
+        entities
+            tile/anim
+            physics
+            inventory
+    update
+        <- world, input, peers
+        -> world, peers
+
+client
+    view
+        <- world, peers
+        prediction?
+    input
+        -> world, peers, prediction? 
